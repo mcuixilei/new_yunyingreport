@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8"/>
+    <title>大雁金服 - 运营报告</title>
+    <meta name="description"
+          content="大雁金服——运营报告"/>
+    <meta name="keywords" content="鹏鼎创赢|鹏金所|投融资|P2P理财|投资理财|安全理财|互联网金融|本息保障|高收益|低风险|供应链金融|债权转让|网络贷款"/>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/statistics.css"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/layer.min.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <style rel="stylesheet" type="text/css">
+
+        .nav-slide-bar .main-class {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .nav-slide-bar .main-class span {
+            font-size: 16px;
+            line-height: 30px;
+            padding: 0 6px 10px;
+        }
+
+        .nav-slide-bar .main-class span i {
+            display: inline-block;
+            height: 4px;
+            width: 12px;
+            vertical-align: middle;
+            margin-left: 4px;
+            margin-bottom: 2px;
+            background: url(images/icon-nav-slide.png) no-repeat;
+        }
+
+        .nav-slide-bar .main-class:hover span i {
+            background-position: 0 -5px;
+        }
+
+        .nav-slide-bar .main-class:hover .box-dialog {
+            display: block;
+        }
+
+        .nav-slide-bar .box-dialog {
+            display: none;
+            position: absolute;
+            top: 35px;
+            left: -22px;
+            text-align: center;
+            width: 120px;
+            border: 1px solid #e0e0e0;
+            background: #fff;
+            *top: 25px;
+        }
+
+        .nav-slide-bar .box-dialog .icon-nav-dialog-arrow {
+            height: 8px;
+            width: 14px;
+            display: inline-block;
+            background: url(images/icon-dialog-arrow.png) no-repeat no-repeat top center;
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            margin-left: -7px;
+        }
+
+        .nav-slide-bar .box-dialog li {
+            height: 34px;
+            line-height: 34px;
+        }
+
+        .nav-slide-bar .box-dialog li a {
+            display: block;
+        }
+
+        .nav-slide-bar .box-dialog li a:hover {
+            background: #2ba8f4;
+            color: #fff;
+        }
+
+
+
+        .icon-wx-cs:hover .m-wx-cs {
+            display: block
+        }
+
+
+        .m-wx-cs p {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: #3a3a3b;
+            text-align: center;
+        }
+
+
+        .m-wx-box {
+            margin-left: -35px;
+        }
+
+        .topbar-nav > a {
+            color: #D6D6D6
+        }
+
+        .icon-cuservice {
+            width: 22px;
+            height: 22px;
+            margin-top: -3px;
+            margin-right: 10px;
+            background: url(images/cuservice.png) no-repeat;
+        }
+
+        /*end 紧急联系*/
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="site-topbar">
+    <div class="container ft12">
+        <div class="topbar-nav fn-left">
+            <span class="hotline-info fn-left"><i class="icon icon-cuservice"></i>客服热线 : 400 988 6888</span>
+            <span class="split fn-left"></span>
+            <a class="hotline-info fn-left" href="javascript:void(0);"><i class="icon icon-hotline"></i>联系我们</a>
+            <span class="split fn-left"></span>
+            <span class="concern-info fn-left">关注我们：
+					<a href="javascript:void(0);" class="icon icon-wx J_ico_wx">
+						<div id="J_wxbox" class="m-wx-box">
+							<div class="clearfix">
+								<span class="ico-triangle">◆</span>
+								<div class="clearfix">
+									<div class="wx-desc clearfix fn-left">
+										<ul class="clearfix">
+											<li class="icon icon-wx-subscribe fl"><img style="width: 118px"
+                                                                                       src="images/dingyue.jpg"></li>
+											<li class="wx-dsc fl">
+												<i class="icon icon-weixin"></i>
+                                                <span class="sub-name">大雁金服</span>
+												<span class="sub-style">订阅号</span>
+											</li>
+										</ul>
+									</div>
+									<div class="wx-desc clearfix fn-left second">
+										<ul class="clearfix">
+											<li class="icon icon-wx-service fl"><img style="width: 118px"
+                                                                                     src="images/fuwu.jpg"></li>
+											<li class="wx-dsc fl">
+												<i class="icon icon-weixin"></i>
+                                               <span class="sub-name">大雁金服</span>
+												<span class="sub-style">服务号</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+				</span>
+        </div>
+
+        <div class="topbar-info fn-right" id="headerTopa">
+            <a class="mod-link-help fn-left" href="https://www.dayanjf.com/visitor/appDownload"><i
+                    class="icon icon-app"></i>下载APP</a>
+            <a class="mod-link-help fn-left" href="https://www.dayanjf.com/helpConter">帮助</a>
+            <a class="mod-link-reg" href="https://www.dayanjf.com/visitor/to-regist">免费注册</a>
+            <span class="split2"></span>
+            <a class="mod-link-login" href="https://www.dayanjf.com/visitor/to-login">立即登录</a>
+        </div>
+
+
+    </div>
+</div>
+<!--header——end-->
+
+<!--正文-->
+<div class="m-statistics">
+    <div class="banner J_container">
+        <div class="banner-container">
+            <ul class="statistics-lists clearfix">
+                <li class="item">
+                    <span class="icon icon-trend icon-users-inc"></span>
+                    <p class="accumulate-num">299,871</p>
+                    <p class="accumulate-desc">加入大雁金服的家人</p>
+                </li>
+                <li class="item">
+                    <span class="icon icon-trend icon-invest-inc"></span>
+                    <p class="accumulate-num">￥8,068,603,201</p>
+                    <p class="accumulate-desc">累计投资金额</p>
+                </li>
+                <li class="item">
+                    <span class="icon icon-trend icon-profit-inc"></span>
+                    <p class="accumulate-num">￥187,059,825</p>
+                    <p class="accumulate-desc">为投资人赚取收益</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="accumulated-money J_container floor1" style="height: 656px;">
+        <div class="money-container">
+            <h3>单月借款标</h3>
+            <p class="illustration">2017年5月份平台借款标11笔。</p>
+            <div>
+
+            </div>
+            <div class="sy_p_chart_barbox">
+                <div id="sy_p_chart_bar" style="width:900px;height:550px;margin:-58px auto"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="accumulated-money J_container floor2">
+        <div class="money-container">
+            <h3>本月撮合交易量</h3>
+            <div class="mt50">
+                <div id="container1" style="min-width:1000px;height:260px">
+
+                    <div class="investdaytouzi_chartbox">
+                        <div id="investdaytouzi-chart" style="width:1200px;height:340px;margin:40px auto"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="accumulated-users J_container floor3">
+        <div class="users-container">
+            <h3>累计加入用户</h3>
+            <p class="illustration">截止至2017年7月，大雁金服累计投资人数698人 。
+                7月新增投资人数为70人。</p>
+            <ul class="clearfix">
+                <li class="icon icon-circle icon-hb">
+                    <p class="num">29.99万人</p>
+                    <p class="desc">累计投资人数</p>
+                </li>
+                <li class="icon icon-circle icon-ho">
+                    <p class="num">1,249</p>
+                    <p class="desc">新增投资人数</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="accumulate-profit J_container floor4">
+        <div class="profit-container">
+            <h3>单月成交数据环比增长率</h3>
+            <div class="mt50">
+                <div id="container2" style="min-width:1000px;height:350px">
+                    <div class="investdaytouzi_chartbox">
+                        <div id="huanbi">
+                            <p>2017年7月新增</p>
+                            <p>成交额<span>279万元</span></p>
+                            <p>环比6月增长<span>6.9%</span></p>
+                        </div>
+                        <div id="investdaytouzi-chart1" style="width:700px;height:340px;float: right"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="accumulated-users J_container floor5">
+        <div class="users-container" style="    height: 466px;">
+            <h3>单月新增注册人数</h3>
+            <p class="illustration">本月新增注册人数为698人 。</p>
+            <ul class="clearfix">
+
+                <li class="icon xztz">
+                    <p class="num">1,249</p>
+                    <p class="desc">新增投资人数</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="produce-msg-distribution J_container floor6">
+        <div class="distribution-container">
+            <h3>单月平台运营数据</h3>
+            <div class=" clearfix">
+                <div id="container3" class="fl ">
+                    <ul class="cjl row-fluid" style="padding-top:0;">
+                        <li>
+                            <div id="sy_p_chart_bar_a" style="width:600px;height:400px;"></div>
+                            <div style="position: relative;top: -215px;left: 255px; font-size: 22px;color: #b4babc;">
+                                投资金额
+                            </div>
+                        </li>
+                        <li>
+                            <div id="sy_p_chart_bar_b" style="width:600px;height:400px;"></div>
+                            <div style="    position: relative;top: -215px;left: 255px;font-size: 22px;color: #b4babc;">
+                                投资期限
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="container4" class="fr ">
+                    <ul class="cjl row-fluid" style="padding-top:0;">
+                        <li>
+                            <div id="sy_p_chart_bar_a1" style="width:600px;height:400px;"></div>
+                            <div style="position:relative;top:-215px;left:255px;font-size:22px;color: #b4babc;">借款金额
+                            </div>
+                        </li>
+                        <li>
+                            <div id="sy_p_chart_bar_b1" style="width:600px;height:400px;"></div>
+                            <div style="position:relative;top:-215px;left:255px;font-size:22px;color: #b4babc;">借款期限
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="produce-data J_container floor7">
+        <div class="produce-container">
+            <h3>投资排行榜</h3>
+            <div>
+                <div class="mt30">
+                    <img class="no1" src="images/no_1.png">
+                    <p style="position: absolute; top: 272px;left: 172px;color: #f7ca17;" class="">1***8</p>
+                    <p style="position: absolute; top: 292px; left: 148px;color: #f7ca17;">¥563164456</p>
+                </div>
+                <div class="mt30">
+                    <img class="no2" src="images/no_2.png">
+                    <p style="position: absolute;top: 528px;left: 63px;color: #b4c9f8;" class="">1***8</p>
+                    <p style="position: absolute;top: 545px;left: 39px;color: #b4c9f8;">¥563164456</p>
+                    <img class="no3" src="images/no_3.png">
+                    <p style="position: absolute;top: 528px;left: 287px;color: #c694e9;" class="">1***8</p>
+                    <p style="position: absolute;top: 545px;left: 264px;color: #c694e9;">¥563164456</p>
+
+                </div>
+            </div>
+            <div>
+                <div class="list">
+                    <div class="list_title">
+                        <div class="paiming">排名</div>
+                        <div class="person">投资人</div>
+                        <div class="money">投资金额（单位:元）</div>
+                    </div>
+                    <div class="list_text">
+                        <ul>
+                            <li class="qiansan">
+                                <div class="paiming">1</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li class="qiansan">
+                                <div class="paiming">2</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li class="qiansan">
+                                <div class="paiming">3</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">4</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">5</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">6</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">7</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">8</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="read-more J_container floor8">
+        <div class="reports-container">
+            <div class="text1">
+                <p class="p1">灯火下的孤独奋斗</p>
+                <p class="p1">只因有家人的等待而始终温暖</p>
+                <p class="p2">大雁金服做你心中的家人，伴你一路前行</p>
+                <p class="p3">
+                <div style="color:#fff;">
+                    关注我们
+                    <a class="weibo" href="http://weibo.com/u/5797740560?refer_flag=1001030101_" target="_blank"><img
+                            id="weibo" style="width: 30px" src="images/weibo.png"></a>
+                    <a class="weixin"><img id="weixin" style="width: 30px" src="images/wechat.png"></a>
+                </div>
+
+                </p>
+
+                <p class="p4">全国统一客服热线：400 6789 830 网址：www.dayanjf.com</p>
+            </div>
+            <div class="text">
+                <p>生活</p>
+                <p>意味着什么</p>
+                <p>是过去的回忆</p>
+                <p>是现在的延续</p>
+                <p>还是</p>
+                <p>还是未来</p>
+            </div>
+            <div class="text">
+                <p>我们的存在</p>
+                <p>会给你的生活</p>
+                <p>带来什么样的感觉</p>
+                <p>有什么不同</p>
+                <p>它的价值</p>
+                <p>和存在的意义</p>
+                <p>又将在哪里</p>
+            </div>
+            <div class="text">
+                <p>一直以来</p>
+                <p>我们思考</p>
+                <p>可以给你带来的体验</p>
+                <p>关于产品</p>
+                <p>关于生活</p>
+                <p>关于服务</p>
+                <p>就是这样的想法</p>
+                <p>这些</p>
+                <p>或那些</p>
+            </div>
+            <div class="text">
+
+                <p>我们视之为信仰的主张</p>
+                <p>推动着我们</p>
+                <p>直到</p>
+                <p>让所有的好</p>
+                <p>成为我们所认知的</p>
+                <p>更好</p>
+                <p>就是这样的执念</p>
+                <p>将你我连接</p>
+                <p>所以</p>
+                <p>你知道我们</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--正文结束-->
+<!--footer-->
+<div class='showWX-bg'></div>
+<div class="showWX-panel" style="display:none;" onselectstart="javascript:return false;">
+    <div class="close-panel"><p class="wxtitle-word">关注大雁金服官方微信</p><span class="close-btn">×</span></div>
+    <div class="wxcontent clearfix">
+        <div class="fl mod-wx wx-brd">
+            <div class="wxcode-logo wxcode-img-order"><img style="width: 118px" src="images/dingyue.jpg"></div>
+            <p class="wx-img-desc" id="J_wxdesc"></p>
+        </div>
+        <div class="fl mod-wx mod-wx-opz">
+            <div class="wxcode-logo wxcode-img-service"><img style="width: 118px" src="images/fuwu.jpg"></div>
+            <p class="wx-img-desc" id="J_wxservice"></p>
+        </div>
+    </div>
+    <div class="wxbottom-word">微信扫一扫，专业投资理财服务一手在握</div>
+</div>
+<!--footer——end-->
+<script type="text/javascript">
+
+    var disappear = function () {
+        $(".showWX-panel").slideUp(100);
+        $(".showWX-bg").fadeOut(200);
+    };
+
+    var wxcode = ['wxcode-logo', 'wxcode-img-order', 'wxcode-img-service'];
+    var wxdesc = ['官方订阅号', '官方服务号'];
+    var wxbottom = ['搜索公众账号pengingwx，或扫描二维码', '搜索公众号“鹏金所”，或扫描二维码'];
+    var weibo = document.getElementById('weibo');
+    weibo.onmouseenter = function () {
+        weibo.src = "images/weibo_hover.png"
+    };
+    weibo.onmouseout = function () {
+        weibo.src = "images/weibo.png"
+    };
+    var weixin = document.getElementById('weixin');
+    weixin.onmouseenter = function () {
+        weixin.src = "images/wechat_hover.png"
+    };
+    weixin.onmouseout = function () {
+        weixin.src = "images/wechat.png"
+    };
+    $(".weixin").on("click", function () {
+        var index = $(this).index();
+        $(".showWX-bg").fadeIn(100);
+        $("#J_wxcode").removeClass().addClass(wxcode[0] + ' ' + wxcode[index]);
+        $("#J_wxdesc").text(wxdesc[index - 1]);
+        $("#J_wxservice").text(wxdesc[index]);
+        $("#J_wxbottom").text(wxbottom[index - 1]);
+        $(".showWX-panel").slideDown(200);
+    });
+    $(".close-btn,.showWX-bg").click(
+        function () {
+            disappear();
+        }
+    );
+</script>
+
+<script src="js/highcharts.js" type="text/javascript"></script>
+<script>
+    function myinvestA() {
+        var myinvestdaytouzi = echarts.init(document.getElementById('investdaytouzi-chart'));
+        option_touzi = {
+
+            tooltip: {
+                formatter: '{b}</br>{c}万元',
+
+            },
+
+            legend: {
+                data: ['交易额(万元)'],
+                textStyle: {
+                    color: "#b7babc"
+                },
+
+            },
+            xAxis: {
+                data: ["1-5日", "6-10日", "11-15日", "16-20日", "21-15日", "26-30日"],
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc'
+                    }
+                },
+                splitLine: {
+                    show: false
+                },
+            },
+            yAxis: {
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc',
+
+                    },
+                    formatter: '{value}万元'
+                },
+                splitLine: {
+                    show: true
+                },
+
+            },
+            series: [{
+                name: '交易额(万元)',
+                type: 'bar',
+                data: [3, 18, 0, 158, 100, 0],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                barWidth: 45,
+                itemStyle: {
+                    normal: {
+                        color: '#03a4e7'
+                    }
+                }
+
+            }]
+        };
+        myinvestdaytouzi.setOption(option_touzi);
+    }
+    function myinvestA1() {
+        var myinvestdaytouzi = echarts.init(document.getElementById('investdaytouzi-chart1'));
+        option_touzi = {
+
+            tooltip: {
+                formatter: '{b}</br>{c}万元',
+
+            },
+
+            legend: {
+                data: ['交易额(万元)'],
+                textStyle: {
+                    color: "#b7babc"
+                },
+
+            },
+            xAxis: {
+                data: [ "6月份", "7月份"],
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc'
+                    }
+                },
+                splitLine: {
+                    show: false
+                },
+            },
+            yAxis: {
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc',
+
+                    },
+                    formatter: '{value}万元'
+                },
+                splitLine: {
+                    show: true
+                },
+
+            },
+            series: [{
+                name: '交易额(万元)',
+                type: 'bar',
+                data: [ 579, 279],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                barWidth: 80,
+                itemStyle: {
+                    normal: {
+                        color: '#03a4e7'
+                    }
+                }
+
+            }]
+        };
+        myinvestdaytouzi.setOption(option_touzi);
+    }
+    function myinvestB() {
+        var sy_pbar = echarts.init(document.getElementById('sy_p_chart_bar'));
+        optiona = {
+
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+
+                data: ['房产抵押','质押贷款','汽车抵押'],
+                textStyle: {
+                    color: "#b7babc",
+                }
+            },
+            color: [ '#f9b401','#00dda0', '#00a2e6',],
+
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['100', '160'],
+
+                    avoidLabelOverlap: true,
+
+                    data: [
+                        {
+                            value: 9,
+                            name: '房产抵押'
+                        },
+                        {
+                            value: 1,
+                            name: '质押贷款'
+                        },
+                        {
+                            value: 1,
+                            name: '汽车抵押'
+                        }
+
+
+                    ]
+                }
+            ]
+        };
+        sy_pbar.setOption(optiona);
+    }
+    function myinvestC() {
+        var sychart_bara = echarts.init(document.getElementById('sy_p_chart_bar_a'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+
+                data: ['1-5万元', '6-10万元', '11-20万元', '21-50万元', '51万元以上'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101', '#8e7cc3'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+                    avoidLabelOverlap: true,
+
+                    data: [
+                        {
+                            value: 38,
+                            name: '1-5万元'
+                        },
+                        {
+                            value: 23,
+                            name: '6-10万元'
+                        },
+                        {
+                            value: 6,
+                            name: '11-20万元'
+                        },
+                        {
+                            value: 2,
+                            name: '21-50万元'
+                        },
+                        {
+                            value: 1,
+                            name: '51万元以上'
+                        }
+
+                    ]
+                }
+            ]
+        };
+        sychart_bara.setOption(option);
+    }
+    //期限
+    function myinvestD() {
+        var sychart_bar = echarts.init(document.getElementById('sy_p_chart_bar_b'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a}{b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+                data: ['0-30天', '31-60天', '61-90天', '91-180天', '181-365天'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101', '#8e7cc3'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+
+                    data: [
+                        {
+                            value: 4,
+                            name: '0-30天'
+                        },
+                        {
+                            value: 13,
+                            name: '31-60天'
+                        },
+                        {
+                            value: 23,
+                            name: '61-90天'
+                        },
+                        {
+                            value: 30,
+                            name: '91-180天'
+                        },
+                        {
+                            value: 0,
+                            name: '181-365天'
+                        }
+                    ]
+                }
+
+            ]
+        };
+        sychart_bar.setOption(option);
+    }
+
+    function myinvestC1() {
+        var sychart_bara = echarts.init(document.getElementById('sy_p_chart_bar_a1'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+
+                data: ['5-10万元', '10-20万元', '21-50万元', '51万元以上'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+                    avoidLabelOverlap: false,
+
+                    data: [
+
+                        {
+                            value: 2,
+                            name: '5-10万元'
+                        },
+                        {
+                            value: 2,
+                            name: '10-20万元'
+                        },
+                        {
+                            value: 2,
+                            name: '21-50万元'
+                        },
+                        {
+                            value: 5,
+                            name: '51万元以上'
+                        }
+
+                    ]
+                }
+            ]
+        };
+        sychart_bara.setOption(option);
+    }
+
+    function myinvestD1() {
+        var sychart_bar = echarts.init(document.getElementById('sy_p_chart_bar_b1'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+                data: ['3个月以下', '6个月', '9个月', '12个月'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+
+                    data: [
+                        {
+                            value: 7,
+                            name: '3个月以下'
+                        },
+                        {
+                            value: 4,
+                            name: '6个月'
+                        },
+                        {
+                            value: 0,
+                            name: '9个月'
+                        },
+                        {
+                            value: 0,
+                            name: '12个月'
+                        },
+
+                    ]
+                }
+
+            ]
+        };
+        sychart_bar.setOption(option);
+    }
+    $(function () {
+
+        myinvestA();
+        myinvestB()
+        myinvestA1();
+        myinvestC();
+        myinvestD();
+        myinvestC1();
+        myinvestD1();
+    });
+</script>
+<!--/*微信下拉*/-->
+<script type="text/javascript">
+
+    $(function () {
+        $(".J_ico_wx").hover(function () {
+            $(this).children(".m-wx-box").show().animate({
+                opacity: "1"
+            }, {
+                duration: 500,
+                queue: !1,
+                specialEasing: {
+                    marginLeft: "easeOutCubic"
+                }
+            }), $(this).addClass("cur");
+        }, function () {
+            $(this).children(".m-wx-box").hide().animate({
+                opacity: "0"
+            }, {
+                duration: 500,
+                queue: !1,
+                specialEasing: {
+                    marginLeft: "easeOutCubic"
+                }
+            }), $(this).removeClass("cur");
+        });
+    });
+</script>
+</body>
+</html>
+

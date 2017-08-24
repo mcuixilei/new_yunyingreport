@@ -1,0 +1,1558 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta charset="utf-8"/>
+    <title>大雁金服 - 运营报告</title>
+    <meta name="description"
+          content="大雁金服——运营报告"/>
+    <meta name="keywords" content="鹏鼎创赢|鹏金所|投融资|P2P理财|投资理财|安全理财|互联网金融|本息保障|高收益|低风险|供应链金融|债权转让|网络贷款"/>
+    <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>-->
+    <!--<link rel="icon" href="/favicon.ico" type="image/x-icon"/>-->
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/statistics.css"/>
+
+
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/layer.min.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript">
+        var path = '';
+    </script>
+</head>
+<body>
+
+<!-- 全整改添加密码策略 add by liangcz for 2016/10/21 -->
+
+
+<style rel="stylesheet" type="text/css">
+    .nav-main {
+        z-index: 6;
+    }
+
+    .nav-slide-bar {
+        margin-right: 15px;
+    }
+
+    .nav-slide-bar .main-class {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .nav-slide-bar .main-class span {
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0 6px 10px;
+    }
+
+    .nav-slide-bar .main-class span i {
+        display: inline-block;
+        height: 4px;
+        width: 12px;
+        vertical-align: middle;
+        margin-left: 4px;
+        margin-bottom: 2px;
+        background: url(images/icon-nav-slide.png) no-repeat;
+    }
+
+    .nav-slide-bar .main-class:hover span i {
+        background-position: 0 -5px;
+    }
+
+    .nav-slide-bar .main-class:hover .box-dialog {
+        display: block;
+    }
+
+    .nav-slide-bar .box-dialog {
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: -22px;
+        text-align: center;
+        width: 120px;
+        border: 1px solid #e0e0e0;
+        background: #fff;
+        *top: 25px;
+    }
+
+    .nav-slide-bar .box-dialog .icon-nav-dialog-arrow {
+        height: 8px;
+        width: 14px;
+        display: inline-block;
+        background: url(images/icon-dialog-arrow.png) no-repeat no-repeat top center;
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        margin-left: -7px;
+    }
+
+    .nav-slide-bar .box-dialog li {
+        height: 34px;
+        line-height: 34px;
+    }
+
+    .nav-slide-bar .box-dialog li a {
+        display: block;
+    }
+
+    .nav-slide-bar .box-dialog li a:hover {
+        background: #2ba8f4;
+        color: #fff;
+    }
+
+    .class_qidian_wpa {
+        display: none;
+    }
+
+    /*start 微信客服*/
+    .icon-wx {
+        margin-right: 10px;
+    }
+
+    .icon-wx-cs {
+        background: url(images/icon-wx-cs.png);
+        height: 22px;
+        width: 22px;
+        margin-top: -3px;
+    }
+
+    .icon-wx-cs:hover {
+        background-position: -23px 0;
+    }
+
+    .m-wx-cs {
+        position: absolute;
+        height: 174px;
+        width: 174px;
+        background: #fff;
+        margin-left: -78px;
+        top: 35px;
+        border: 1px solid #e6e6e6;
+        -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+        z-index: 9999;
+        cursor: pointer;
+        display: none;
+    }
+
+    .icon-wx-cs:hover .m-wx-cs {
+        display: block
+    }
+
+    .icon-wx-cs-qr {
+        background: url(images/icon-wx-cs-qr.png) center center;
+        height: 126px;
+        width: 126px;
+        margin: 24px;
+        display: inline-block;
+    }
+
+    .m-wx-cs p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: #3a3a3b;
+        text-align: center;
+    }
+
+    .icon-qr1 {
+        background-position: 0 0;
+    }
+
+    .icon-qr2 {
+        background-position: -127px 0;
+    }
+
+    .icon-qr3 {
+        background-position: -254px 0;
+    }
+
+    .icon-qr4 {
+        background-position: -381px 0;
+    }
+
+    /*end 微信客服*/
+    /*start 紧急联系*/
+    .m-wx-box {
+        margin-left: -35px;
+    }
+
+    .topbar-nav > a {
+        color: #D6D6D6
+    }
+
+    .icon-cuservice {
+        width: 22px;
+        height: 22px;
+        margin-top: -3px;
+        margin-right: 10px;
+        background: url(images/cuservice.png) no-repeat;
+    }
+
+    /*end 紧急联系*/
+</style>
+<!--site-topbar S-->
+<div class="site-topbar">
+    <div class="container ft12">
+        <div class="topbar-nav fn-left">
+            <span class="hotline-info fn-left"><i class="icon icon-cuservice"></i>客服热线 : 400 988 6888</span>
+            <span class="split fn-left"></span>
+            <a class="hotline-info fn-left" href="javascript:void(0);"><i class="icon icon-hotline"></i>联系我们</a>
+            <span class="split fn-left"></span>
+            <span class="concern-info fn-left">关注我们：
+					<a href="javascript:void(0);" class="icon icon-wx J_ico_wx">
+						<div id="J_wxbox" class="m-wx-box">
+							<div class="clearfix">
+								<span class="ico-triangle">◆</span>
+								<div class="clearfix">
+									<div class="wx-desc clearfix fn-left">
+										<ul class="clearfix">
+											<li class="icon icon-wx-subscribe fl"><img style="width: 118px" src="images/dingyue.jpg"></li>
+											<li class="wx-dsc fl">
+												<i class="icon icon-weixin"></i>
+                                                <span class="sub-name">大雁金服</span>
+												<span class="sub-style">订阅号</span>
+											</li>
+										</ul>
+									</div>
+									<div class="wx-desc clearfix fn-left second">
+										<ul class="clearfix">
+											<li class="icon icon-wx-service fl"><img style="width: 118px" src="images/fuwu.jpg"></li>
+											<li class="wx-dsc fl">
+												<i class="icon icon-weixin"></i>
+                                               <span class="sub-name">大雁金服</span>
+												<span class="sub-style">服务号</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<!--<a href="javascript:void(0);" class="icon icon-wx-cs">-->
+						<!--<div class="m-wx-cs">-->
+							<!--<div class="pr">-->
+								<!--<span class="ico-triangle">◆</span>-->
+								<!--<div class="pr">-->
+									<!--<i class="icon-wx-cs-qr icon-qr2">&nbsp;</i>-->
+									<!--<p>添加您的专属微信客服小鹏妹</p>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</a>-->
+
+				</span>
+        </div>
+
+        <div class="topbar-info fn-right" id="headerTopa">
+            <a class="mod-link-help fn-left" href="https://www.dayanjf.com/visitor/appDownload"><i class="icon icon-app"></i>下载APP</a>
+            <a class="mod-link-help fn-left" href="https://www.dayanjf.com/helpConter">帮助</a>
+            <a class="mod-link-reg" href="https://www.dayanjf.com/visitor/to-regist">免费注册</a>
+            <span class="split2"></span>
+            <a class="mod-link-login" href="https://www.dayanjf.com/visitor/to-login">立即登录</a>
+        </div>
+
+
+    </div>
+</div>
+<!--site-topbar E-->
+
+
+<!--header E-->
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript">
+
+    function checkAccess() {
+
+        var usersType = '';
+        var codCustBusLimit = '';
+        var borrow = codCustBusLimit.substr(4, 1);
+        var users = '';
+
+        if (users == null) {
+            var _html1 = '<div class="borrow-win">'
+                + '<div class="mb20">平台目前只对公司开放借款申请</div>'
+                + '<div class="fn-c"><a class="btn btn-blue mr10" href=' + path + '"/application/borrowing/selLoanType.do">我是公司用户</a><a class="btn btn-disabled"  href=' + path + '"/home/homePage/index.do">我是个人用户</a></div>'
+                + '</div>';
+            var d1 = dialog({
+                title: '提示',
+                content: _html1,
+                quickClose: true
+            });
+            d1.show();
+            $("#J_btn_close1").on("click", function () {
+                d1.close().remove();
+            });
+            /* $.layer({
+             shade: [0],
+             area: ['auto','auto'],
+             dialog: {
+             msg: '平台只对公司开发借款申请',
+             btns: 2,
+             type: 4,
+             btn: ['我是公司用户','取消'],
+             yes: function(){
+             location.href = path+"/application/borrowing/selLoanType.do";
+             }
+             }
+             }); */
+            return false;
+        }
+        else if (codCustType == "1") {
+            var status = true;
+            if (codCustBusLimit.substr(4, 1) == "1") {
+                return true;
+            } else {
+
+                $.ajax({
+                    type: "POST",
+                    url: path + "/home/verUserStatus.do",
+                    async: false,
+                    success: function (data) {
+                        if (data != "null") {
+                            var dataObj = eval("(" + data + ")");
+                            if (dataObj == "1") {
+                                //layer.alert("平台尚未开通个人借款业务", 8);
+                                var _html2 = '<div class="borrow-win ft16">'
+                                    + '<div class="mb20">您尚不具备借款权限</div>'
+                                    + '<div class="fn-c"><a class="btn btn-blue" id="J_btn_close2" href="javascript:void(0);">我知道了</a></div>'
+                                    + '</div>';
+                                var d2 = dialog({
+                                    title: '提示',
+                                    content: _html2,
+                                    quickClose: false
+                                });
+                                if ($(".ui-dialog-body").css("padding") == '0px') {
+                                    $(".borrow-win").css({"padding": "20px"});
+                                }
+                                $("#J_btn_close2").on("click", function (e) {
+                                    d2.close().remove();
+                                });
+                                d2.show();
+
+                                /* $.layer({
+                                 shade: [0],
+                                 area: ['auto','auto'],
+                                 dialog: {
+                                 msg: '平台目前只对公司开放借款申请',
+                                 btns: 1,
+                                 type: 8,
+                                 btn: ['我知道了'],
+                                 }
+                                 }); */
+                                status = false;
+                            }
+                        }
+                    }
+                });
+            }
+            return status;
+        }
+    }
+    /*微信下拉*/
+    $(function () {
+        $(".J_ico_wx").hover(function () {
+            $(this).children(".m-wx-box").show().animate({
+                opacity: "1"
+            }, {
+                duration: 500,
+                queue: !1,
+                specialEasing: {
+                    marginLeft: "easeOutCubic"
+                }
+            }), $(this).addClass("cur");
+        }, function () {
+            $(this).children(".m-wx-box").hide().animate({
+                opacity: "0"
+            }, {
+                duration: 500,
+                queue: !1,
+                specialEasing: {
+                    marginLeft: "easeOutCubic"
+                }
+            }), $(this).removeClass("cur");
+        });
+    });
+
+    function toIndex() {//获取URL
+        window.location.href = path;
+    }
+</script>
+<script type="text/javascript">
+    function toIndex() {//获取URL
+        window.location.href = path;
+    }
+
+</script>
+<!-- 全整改添加密码策略 add by liangcz for 2016/10/21 begin -->
+<script type="text/javascript">
+    var PENGING_PARAMS = {};
+    PENGING_PARAMS.passwordPattern = /^(?!(?:\d+|[a-zA-Z]+)$)[\da-zA-Z]{6,16}$/;
+    PENGING_PARAMS.passwordWrongTip = '6～16位，必须为字母（区分大小写）与数字的组合';
+</script>
+<!-- 全整改添加密码策略 add by liangcz for 2016/10/21 end -->
+
+
+<div class="m-statistics">
+    <div class="banner J_container">
+        <div class="banner-container">
+            <ul class="statistics-lists clearfix">
+                <li class="item">
+                    <span class="icon icon-trend icon-users-inc"></span>
+                    <p class="accumulate-num">299,871</p>
+                    <p class="accumulate-desc">加入大雁金服的亲人</p>
+                </li>
+                <li class="item">
+                    <span class="icon icon-trend icon-invest-inc"></span>
+                    <p class="accumulate-num">￥8,068,603,201</p>
+                    <p class="accumulate-desc">累计投资金额</p>
+                </li>
+                <li class="item">
+                    <span class="icon icon-trend icon-profit-inc"></span>
+                    <p class="accumulate-num">￥187,059,825</p>
+                    <p class="accumulate-desc">为投资人赚取收益</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="accumulated-money J_container">
+        <div class="money-container">
+            <h3>本月撮合交易量</h3>
+            <div class="mt50">
+                <div id="container1" style="min-width:1000px;height:260px">
+
+                    <div class="investdaytouzi_chartbox">
+                        <div id="investdaytouzi-chart" style="width:1200px;height:340px;margin:40px auto"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="accumulated-users J_container">
+        <div class="users-container">
+            <h3>累计加入用户</h3>
+            <p class="illustration">截止至2017年7月，大雁金服累计投资人数698人 。
+                7月新增投资人数为70人。</p>
+            <ul class="clearfix">
+                <li class="icon icon-circle icon-hb">
+                    <p class="num">29.99万人</p>
+                    <p class="desc">累计投资人数</p>
+                </li>
+                <li class="icon icon-circle icon-ho">
+                    <p class="num">1,249</p>
+                    <p class="desc">新增投资人数</p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="accumulate-profit J_container">
+        <div class="profit-container">
+            <h3>单月成交数据环比增长率</h3>
+            <div class="mt50">
+                <div id="container2" style="min-width:1000px;height:350px">
+                    <div class="investdaytouzi_chartbox">
+                        <div id="investdaytouzi-chart1" style="width:1200px;height:340px;margin:40px auto"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="produce-msg-distribution J_container">
+        <div class="distribution-container">
+            <h3>单月平台运营数据</h3>
+            <div class=" clearfix">
+                <div id="container3" class="fl ">
+                    <ul class="cjl row-fluid" style="padding-top:0;">
+                        <li>
+                            <div id="sy_p_chart_bar_a" style="width:600px;height:400px;"></div>
+                            <div style="position: relative;top: -215px;left: 255px; font-size: 22px;color: #b4babc;">
+                                投资金额
+                            </div>
+                        </li>
+                        <li>
+                            <div id="sy_p_chart_bar_b" style="width:600px;height:400px;"></div>
+                            <div style="    position: relative;top: -215px;left: 255px;font-size: 22px;color: #b4babc;">
+                                投资期限
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="container4" class="fr ">
+                    <ul class="cjl row-fluid" style="padding-top:0;">
+                        <li>
+                            <div id="sy_p_chart_bar_a1" style="width:600px;height:400px;"></div>
+                            <div style="position:relative;top:-215px;left:255px;font-size:22px;color: #b4babc;">借款金额
+                            </div>
+                        </li>
+                        <li>
+                            <div id="sy_p_chart_bar_b1" style="width:600px;height:400px;"></div>
+                            <div style="position:relative;top:-215px;left:255px;font-size:22px;color: #b4babc;">借款期限
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="produce-data J_container">
+        <div class="produce-container">
+            <h3>投资排行榜</h3>
+            <div>
+                <div class="mt30">
+                    <img class="no1" src="images/no_1.png">
+                    <p style="position: absolute; top: 272px;left: 172px;color: #f7ca17;" class="">1***8</p>
+                    <p style="position: absolute; top: 292px; left: 148px;color: #f7ca17;">¥563164456</p>
+                </div>
+                <div class="mt30">
+                    <img class="no2" src="images/no_2.png">
+                    <p style="position: absolute;top: 528px;left: 63px;color: #b4c9f8;" class="">1***8</p>
+                    <p style="position: absolute;top: 545px;left: 39px;color: #b4c9f8;">¥563164456</p>
+                    <img class="no3" src="images/no_3.png">
+                    <p style="position: absolute;top: 528px;left: 287px;color: #c694e9;" class="">1***8</p>
+                    <p style="position: absolute;top: 545px;left: 264px;color: #c694e9;">¥563164456</p>
+
+                </div>
+            </div>
+            <div>
+                <div class="list">
+                    <div class="list_title">
+                        <div class="paiming">排名</div>
+                        <div class="person">投资人</div>
+                        <div class="money">投资金额（单位:元）</div>
+                    </div>
+                    <div class="list_text">
+                        <ul>
+                            <li class="qiansan">
+                                <div class="paiming">1</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li class="qiansan">
+                                <div class="paiming">2</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li class="qiansan">
+                                <div class="paiming">3</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">4</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">5</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">6</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">7</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+                            <li>
+                                <div class="paiming">8</div>
+                                <div class="person">1***8</div>
+                                <div class="money"><span>¥</span>563164456</div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="read-more J_container">
+        <div class="reports-container">
+            <div class="text1">
+                <p class="p1">灯火下的孤独奋斗</p>
+                <p class="p1">只因有家人的等待而始终温暖</p>
+                <p class="p2">大雁金服做你心中的家人，伴你一路前行</p>
+                <p class="p3">
+                <div style="color:#fff;">
+                    关注我们
+                    <a class="weibo" href="http://weibo.com/u/5797740560?refer_flag=1001030101_" target="_blank" ><img id="weibo" style="width: 30px" src="images/weibo.png"></a>
+                    <a class="weixin" ><img id="weixin" style="width: 30px" src="images/wechat.png"></a>
+                </div>
+
+                </p>
+
+                <p class="p4">全国统一客服热线：400 6789 830 网址：www.dayanjf.com</p>
+            </div>
+            <div class="text">
+                <p>生活</p>
+                <p>意味着什么</p>
+                <p>是过去的回忆</p>
+                <p>是现在的延续</p>
+                <p>还是</p>
+                <p>还是未来</p>
+            </div>
+            <div class="text">
+                <p>我们的存在</p>
+                <p>会给你的生活</p>
+                <p>带来什么样的感觉</p>
+                <p>有什么不同</p>
+                <p>它的价值</p>
+                <p>和存在的意义</p>
+                <p>又将在哪里</p>
+            </div>
+            <div class="text">
+                <p>一直以来</p>
+                <p>我们思考</p>
+                <p>可以给你带来的体验</p>
+                <p>关于产品</p>
+                <p>关于生活</p>
+                <p>关于服务</p>
+                <p>就是这样的想法</p>
+                <p>这些</p>
+                <p>或那些</p>
+            </div>
+            <div class="text">
+
+                <p>我们视之为信仰的主张</p>
+                <p>推动着我们</p>
+                <p>直到</p>
+                <p>让所有的好</p>
+                <p>成为我们所认知的</p>
+                <p>更好</p>
+                <p>就是这样的执念</p>
+                <p>将你我连接</p>
+                <p>所以</p>
+                <p>你知道我们</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class='showWX-bg'></div>
+<div class="showWX-panel" style="display:none;" onselectstart="javascript:return false;">
+    <div class="close-panel"><p class="wxtitle-word">关注大雁金服官方微信</p><span class="close-btn">×</span></div>
+    <div class="wxcontent clearfix">
+        <div class="fl mod-wx wx-brd">
+            <div class="wxcode-logo wxcode-img-order" ><img style="width: 118px" src="images/dingyue.jpg"></div>
+            <p class="wx-img-desc" id="J_wxdesc"></p>
+        </div>
+        <div class="fl mod-wx mod-wx-opz">
+            <div class="wxcode-logo wxcode-img-service" ><img style="width: 118px" src="images/fuwu.jpg"></div>
+            <p class="wx-img-desc" id="J_wxservice"></p>
+        </div>
+    </div>
+    <div class="wxbottom-word">微信扫一扫，专业投资理财服务一手在握</div>
+</div>
+
+<!-- footer Start -->
+<div class="site-footer" style="display: none">
+    <div class="container">
+        <div class="ui-footer-top fn-clear">
+            <div class="ui-service fn-left">
+                <div class="service-line">
+                    <h4 class="service-line-time">客服热线（服务时间 09:00-18:00）</h4>
+                    <p class="service-line-num">400-6789-830</p>
+                    <p class="service-mail">
+                        企业邮箱 dayanjinfu@126.com
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="ui-links fn-right">
+                <div class="ui-links-top">
+                    关注我们
+                    <a href="http://weibo.com/u/5797740560?refer_flag=1001030101_" target="_blank"
+                       class="icon icon-sinawb"></a>
+                    <a class="icon icon-sitewx"></a>
+                </div>
+                <div class="ui-links-nav">
+                    <ul class="fn-clear">
+                        <li class="links-nav-item"><a href="https://www.dayanjf.com/">首页</a></li>
+                        <li class="links-nav-item"><a href="https://www.dayanjf.com/loaninfo/openLoan.htm?topicId=2">我要投资</a>
+                        </li>
+                        <li class="links-nav-item"><a href="https://www.dayanjf.com/borrow/applyBorrow.htm?topicId=3">我要借款</a>
+                        </li>
+                        <li class="links-nav-item"><a href="https://www.dayanjf.com//borrow/newPerson.htm?topicId=4">新手指引</a>
+                        </li>
+                        <li class="links-nav-item"><a href="https://www.dayanjf.com/aboutMe?topicId=22">关于我们</a></li>
+                        <li class="links-nav-item"><a href="https://www.dayanjf.com/visitor/to-login">我的账户</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer End -->
+<script type="text/javascript">
+    var path = '';
+</script>
+<script type="text/javascript">
+//    var codCustType = null;
+//    var codCustCrStatus = null;
+//    $(function () {
+//        //查询登录信息
+//        $.post(path + "/usersInfo.do", function (data) {
+//            if (null != data) {
+//                //状态
+//                codCustType = data.codCustType;
+//                if (null != data.codCustCrStatus) {
+//
+//                    codCustCrStatus = data.codCustCrStatus.substring(1, 2);
+//                }
+//                $("#headerTopb").show();
+//                $("#headerTopa").hide();
+//                $("#headerName").html(data.codCustUserid);
+//                if ($("#menuid4a").length > 0) {
+//                    uslj(data.codCustType);//用户类型逻辑处理
+//                }
+//            } else if (null == data) {
+//                $("#headerTopa").show();
+//                $("#headerTopb").hide();
+//            }
+//        }, "json");
+//
+//    });
+
+
+    //N秒跳转
+//    function delayURL(url, n) {
+//        $("#timeCount").empty().text(n);
+//        if (n == 0) {
+//            window.location.href = path + url;
+//            return;
+//        }
+//        n = n - 1;
+//        setTimeout("delayURL('" + url + "'," + n + ")", 1000);
+//
+//    }
+    var disappear = function () {
+        $(".showWX-panel").slideUp(100);
+        $(".showWX-bg").fadeOut(200);
+    };
+
+    var wxcode = ['wxcode-logo', 'wxcode-img-order', 'wxcode-img-service'];
+    var wxdesc = ['官方订阅号', '官方服务号'];
+    var wxbottom = ['搜索公众账号pengingwx，或扫描二维码', '搜索公众号“鹏金所”，或扫描二维码'];
+    var weibo=document.getElementById('weibo');
+    weibo.onmouseenter=function () {
+        weibo.src="images/weibo_hover.png"
+    };
+    weibo.onmouseout=function () {
+        weibo.src="images/weibo.png"
+    };
+    var weixin=document.getElementById('weixin');
+    weixin.onmouseenter=function () {
+        weixin.src="images/wechat_hover.png"
+    };
+    weixin.onmouseout=function () {
+        weixin.src="images/wechat.png"
+    };
+    $(".weixin").on("click", function () {
+        var index = $(this).index();
+        $(".showWX-bg").fadeIn(100);
+        $("#J_wxcode").removeClass().addClass(wxcode[0] + ' ' + wxcode[index]);
+        $("#J_wxdesc").text(wxdesc[index - 1]);
+        $("#J_wxservice").text(wxdesc[index]);
+        $("#J_wxbottom").text(wxbottom[index - 1]);
+        $(".showWX-panel").slideDown(200);
+    });
+    $(".close-btn,.showWX-bg").click(
+        function () {
+            disappear();
+        }
+    );
+
+
+//    $("body").keydown(function (event) {
+//        if (event.keyCode == 27)
+//            disappear();
+//
+//    });
+    /*执行调用*/
+//    $(function () {
+//        var slider = PDCY.carousel();
+//        new slider('J-banners', 'J-focus');
+//        if (typeof($('#J-nav-menu')[0]) != 'undefined') PDCY.app.slideNav.init();
+//
+//        $("#J_service2").on("click", function () {
+//            PDCY.jsLoader("/static/js/qdqq.js?v=1");
+//        });
+//    });
+//    var _depository = (function (){
+//        var _html = '<div class="layer-invite-depository" id="J_depository" style="display:none;">'
+//            + '<div class="bg" style="position:fixed;background:#333;opacity:0.3;height:100%;width:100%;z-index:9998;filter:alpha(opacity=30);left:0;top:0;"></div>'
+//            + '	<div class="m-invite" style="border-radius:8px;position:fixed;height:471px;width:641px;top:50%;left:50%;margin-left:-320px;margin-top:-235px;background:#fff;z-index:9999;">'
+//            + '		<a id="J_close" class="close" href="javascript:void(0);" style="background: url(' + path + '/static/images/depository/depository-close.png) no-repeat center;display:inline-block;height:29px;width:29px;position:absolute;right:0;margin-right:15px;top:0;margin-top:15px;z-index:1;"></a>'
+//            + '		<div class="top" style="border-radius:8px 8px 0 0;text-align:center;position:relative">'
+//            + '			<i style="background: url(' + path + '/static/images/depository/depository-layer.png) no-repeat center;width:641px;height: 356px;display:inline-block;"></i>'
+//        + '		</div>'
+//            + '		<div class="bottom" style="text-align:center;padding:36px 0;">'
+//            + '			<a href="' + path + '/bank/depository/selAddDepositoryCard.do" class="btn btn-immediately" style="width:214px;height:38px;line-height:38px;text-align:center;background:#16afee;color:#fff;">开通银行存管账户</a>'
+//            + '		</div>'
+//            + '	</div>'
+//            + '</div>';
+//
+//        var depository = $(_html).appendTo(document.body);
+//        $("#J_close").on("click", function () {
+//            $("#J_depository").hide();
+//        });
+//        $("#J_cancel_cer").on("click", function () {
+//            $("#J_depository").hide();
+//        });
+//
+//        return $();
+//    })($);
+</script>
+
+<!-- footer End -->
+
+<script src="js/highcharts.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var path = '';
+</script>
+<script>
+//    var month = "201606";
+//    if (!month) {
+//        var cur = new Date();
+//        var curMonth = cur.getMonth() < 9 ? "0" + (cur.getMonth() + 1) : cur.getMonth() + 1;
+//        month = cur.getFullYear() + curMonth;
+//    }
+//    function getBarInfo(type) {//1、累计成交金额 2、月成交金额 4、累计发放收益 8、月发放收益
+//        var barInfoList = null;
+//        $.ajax({
+//            url: path + "/home/monthlyReportBarStatInfo.do",
+//            type: "POST",
+//            async: false,
+//            data: {"statMon": month, "codIdxType": type, "length": 13},//统计月份，类型，期限
+//            dataType: "json",
+//            success: function (data) {
+//                if (data && data.rptStatMonthIdxList) {
+//                    barInfoList = data.rptStatMonthIdxList;
+//                }
+//            },
+//            error: function (data) {
+//                barInfoList = data;
+//            }
+//        });
+//        return barInfoList;
+//
+//    }
+//    function getPieInfo(type) {//1、累计成交金额 2、月成交金额 4、累计发放收益 8、月发放收益
+//        var pieInfoList = null;
+//        $.ajax({
+//            url: path + "/home/monthlyReportPieStatInfo.do",
+//            type: "POST",
+//            async: false,
+//            data: {"statMon": month, "codIdxType": type},//统计月份，类型
+//            dataType: "json",
+//            success: function (data) {
+//                if (data && data.rptStatMonthProjList) {
+//                    pieInfoList = data.rptStatMonthProjList;
+//                }
+//            },
+//            error: function (data) {
+//                pieInfoList = data;
+//            }
+//        });
+//        return pieInfoList;
+//    }
+//
+//    var createBar = function (id, options) {
+//        var txtData = options.txtData;
+//        $('#' + id).highcharts({
+//            chart: {
+//                type: 'column'
+//            },
+//            title: {
+//                text: "鹏金所月报",
+//                style: {
+//                    opacity: 0
+//                }
+//            },
+//            xAxis: {
+//                categories: options.xAxis,
+//                labels: {
+//                    align: 'center',
+//                    style: {
+//                        fontSize: '12px',
+//                        color: "#b7babc"
+//                    }
+//                },
+//                tickLength: 0
+//            },
+//            yAxis: {
+//                labels: {
+//                    format: options.yAxis.format,
+//                    style: {
+//                        color: "#b7babc"
+//                    }
+//                },
+//                gridLineColor: '#eaeaea',
+//                min: options.yAxis.min,
+//                max: options.yAxis.max,
+//                tickInterval: options.yAxis.step,
+//                title: {
+//                    text: ''
+//                }
+//            },
+//            credits: {
+//                enabled: false
+//            },
+//            legend: {
+//                enabled: false
+//            },
+//            tooltip: {
+//                formatter: function () {
+//                    if (txtData)
+//                        return txtData[this.x];
+//                    else
+//                        return this.y;
+//                },
+//                headerFormat: '',
+//                borderColor: '#fff',
+//                style: {
+//                    color: '#ffb116'
+//                }
+//            },
+//            series: [{
+//                name: 'Population',
+//                data: options.data,
+//                color: "#399be6"
+//            }],
+//            plotOptions: {
+//                column: {
+//                    states: {
+//                        hover: {
+//                            color: '#ffb116'
+//                        }
+//                    }
+//                }
+//            }
+//        });
+//    };
+//    var createPie = function (id, options) {
+//        $("#" + id).highcharts({
+//            chart: {
+//                backgroundColor: null,
+//                type: 'pie',
+//                width: options.width,
+//                height: options.height
+//            },
+//            colors: "#000",
+//            title: {
+//                text: false
+//            },
+//            tooltip: {
+//                enabled: false
+//            },
+//            credits: {
+//                enabled: false
+//            },
+//            labels: {
+//                style: {
+//                    color: "#000",
+//                    fontSize: '14px',
+//                    fontFamily: '"Microsoft YaHei",Arial,Helvetica,sans-serif'
+//                },
+//                items: options.items
+//            },
+//            plotOptions: {
+//                pie: {
+//                    innerSize: '' + options.inner,
+//                    startAngle: options.startAngle,
+//                    size: options.size,
+//                    allowPointSelect: false,
+//                    cursor: 'default',
+//                    lineColor: '#000',
+//                    borderColor: '#fff',
+//                    dataLabels: {
+//                        enabled: true,
+//                        color: '#000',
+//                        connectorColor: options.connectorColor,
+//                        style: {
+//                            color: "#000",
+//                            textShadow: 0,
+//                            fontWeight: "normal",
+//                            fontSize: "12px",
+//                            fontFamily: "微软雅黑"
+//                        }
+//                    },
+//                    point: {
+//                        events: {
+//                            click: function (e) {
+//                                return false;
+//                            },
+//                            mouseOver: function (e) {
+//                                var index = e.target.index;
+//                                var textobj = $("#" + id).find(".highcharts-data-labels g").eq(index).find("text");
+//                                textobj.animate({"font-size": "14px"}, 50);
+//                            },
+//                            mouseOut: function (e) {
+//                                var index = e.target.index;
+//                                var textobj = $("#" + id).find(".highcharts-data-labels g").eq(index).find("text");
+//                                textobj.animate({"font-size": "12px"}, 50);
+//                            }
+//                        }
+//                    },
+//                    slicedOffset: 10
+//                },
+//                series: {
+//                    states: {
+//                        hover: {
+//                            enabled: true,
+//                            halo: {
+//                                opacity: 0.5
+//                            }
+//                        }
+//                    }
+//                }
+//            },
+//            navigation: {
+//                buttonOptions: {
+//                    enabled: false
+//                }
+//            },
+//            series: [{
+//                name: '',
+//                data: options.data,
+//                dataLabels: {
+//                    formatter: options.format || function () {
+//                        return this.point.name + '<br>' + Highcharts.numberFormat(this.percentage, 2) + '%';
+//                    },
+//                    color: 'black'
+//                }
+//            }]
+//        });
+//    };
+//    var initBarInfo = function () {
+//        var accInvAmount = getBarInfo(1);
+//        var options1 = {
+//            xAxis: [],
+//            yAxis: {
+//                format: '{value}亿'
+//            },
+//            data: [],
+//            txtData: []
+//        };
+//        if (accInvAmount) {
+//            var max = accInvAmount[0].numIdxValue;
+//            var step = Math.pow(10, 8);
+//            ;//亿为单位
+//            var candidate = "亿万 ";
+//            var count = 0;
+//            var stuffix = candidate.charAt(0);
+//            for (var i = accInvAmount.length - 1; i >= 0; i--) {
+//                var item = accInvAmount[i];
+//                if (item.numIdxValue > max)
+//                    max = item.numIdxValue;
+//            }
+//            while (max / step < 1 && count < 2) {
+//                step /= Math.pow(10, 4);
+//                stuffix = candidate.charAt(++count);
+//            }
+//            for (var i = accInvAmount.length - 1; i >= 0; i--) {
+//                var item = accInvAmount[i];
+//                options1.xAxis.push(item.statMon);
+//                options1.data.push(item.numIdxValue / step);
+//                options1.txtData[item.statMon] = item.txtIdxValue;
+//            }
+//            options1.yAxis.format = "{value}" + stuffix;
+//
+//        }
+//        createBar("container1", options1);
+//
+//        var accInvProfit = getBarInfo(4);
+//        var options2 = {
+//            xAxis: [],
+//            yAxis: {
+//                format: '{value}万'
+//            },
+//            data: [],
+//            txtData: []
+//        };
+//        if (accInvProfit) {
+//            var max = accInvProfit[0].numIdxValue;
+//            var step = Math.pow(10, 8);//亿为单位
+//            var candidate = "亿万 ";
+//            var count = 0;
+//            var stuffix = candidate.charAt(0);
+//            for (var i = accInvProfit.length - 1; i >= 0; i--) {
+//                var item = accInvProfit[i];
+//                if (item.numIdxValue > max)
+//                    max = item.numIdxValue;
+//            }
+//            while (max / step < 1 && count < 2) {
+//                step /= Math.pow(10, 4);
+//                stuffix = candidate.charAt(++count);
+//            }
+//            for (var i = accInvProfit.length - 1; i >= 0; i--) {
+//                var item = accInvProfit[i];
+//                options2.xAxis.push(item.statMon);
+//                options2.data.push(item.numIdxValue / step);
+//                options2.txtData[item.statMon] = item.txtIdxValue;
+//            }
+//            options2.yAxis.format = "{value}" + stuffix;
+//        }
+//        createBar("container2", options2);
+//    };
+//    var initPieInfo = function () {
+//        var eventsTermList = getPieInfo(1);
+//        var colors3 = ["#f1ed59", "#2ea7e0", "#9ece6d", "#ed7ba1"];
+//        var options3 = {
+//            items: [{
+//                html: "项目期限",
+//                style: {
+//                    left: '162px',
+//                    top: '105px'
+//                }
+//            }],
+//            width: 400,
+//            height: 250,
+//            size: '85%',
+//            inner: '150',
+//            connectorColor: '#000',
+//            format: function () {
+//                return Highcharts.numberFormat(this.percentage, 2) + '%'
+//            },
+//            data: []
+//        };
+//        for (var i = 0; i < eventsTermList.length; i++) {
+//            var item = eventsTermList[i];
+//            options3.data.push({y: item.txtIdxValue.slice(0, -1) * 1, color: colors3[i]});
+//            $("#J_event_term" + i).text(item.txtIdxDesc);
+//        }
+//        createPie("container3", options3);
+//        var eventsRateList = getPieInfo(2);
+//        var colors4 = ["#ffb116", "#399be6", "#71d8d8"];
+//        var options4 = {
+//            items: [{
+//                html: "利率分布",
+//                style: {
+//                    left: '162px',
+//                    top: '105px'
+//                }
+//            }],
+//            width: 400,
+//            height: 250,
+//            size: '85%',
+//            inner: '150',
+//            connectorColor: '#000',
+//            format: function () {
+//                return Highcharts.numberFormat(this.percentage, 2) + '%'
+//            },
+//            data: []
+//        };
+//        for (var i = 0; i < eventsRateList.length; i++) {
+//            var item = eventsRateList[i];
+//            options4.data.push({y: item.txtIdxValue.slice(0, -1) * 1, color: colors4[i]});
+//            $("#J_event_rate" + i).text(item.txtIdxDesc);
+//        }
+//        createPie("container4", options4);
+//        var options5 = {
+//            items: [{
+//                html: '<span style="font-size:32px">0损失</span>',
+//                style: {
+//                    left: '446px',
+//                    top: '135px'
+//                }
+//            }, {
+//                html: '<span style="font-size:16px>平台上线至今</span>',
+//                style: {
+//                    left: '446px',
+//                    top: '158px'
+//                }
+//            }, {
+//                html: '<span style="font-size:16px">没有投资人出现过资金损失</span>',
+//                style: {
+//                    left: '394px',
+//                    top: '175px'
+//                }
+//            }],
+//            startAngle: -30,
+//            width: 1000,
+//            height: 350,
+//            size: '85%',
+//            inner: '220',
+//            format: function () {
+//                return this.point.name + '<span style="color:#F28A10">' + Highcharts.numberFormat(this.point.y, 2, '.', ',') + '亿元</span>';
+//            },
+//            data: [
+//                {
+//                    y: "15.81" * 1,
+//                    name: "累计待还本息：",
+//                    color: "#8e7cc3"
+//                },
+//                {
+//                    y: "61.60" * 1,
+//                    name: "已归还本息总额：",
+//                    color: "#00b5ff"
+//                }
+//            ]
+//        };
+//        createPie("container5", options5);
+//    }
+    function myinvestA() {
+        var myinvestdaytouzi = echarts.init(document.getElementById('investdaytouzi-chart'));
+        option_touzi = {
+
+            tooltip: {
+                formatter: '{b}</br>{c}万元',
+
+            },
+
+            legend: {
+                data: ['交易额(万元)'],
+                textStyle: {
+                    color: "#b7babc"
+                },
+
+            },
+            xAxis: {
+                data: ["1-5日", "6-10日", "11-15日", "16-20日", "21-15日", "26-30日"],
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc'
+                    }
+                },
+                splitLine: {
+                    show: false
+                },
+            },
+            yAxis: {
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc',
+
+                    },
+                    formatter: '{value}万元'
+                },
+                splitLine: {
+                    show: true
+                },
+
+            },
+            series: [{
+                name: '交易额(万元)',
+                type: 'bar',
+                data: [3, 18, 0, 158, 100, 0],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                barWidth: 45,
+                itemStyle: {
+                    normal: {
+                        color: '#03a4e7'
+                    }
+                }
+
+            }]
+        };
+        myinvestdaytouzi.setOption(option_touzi);
+    }
+    function myinvestA1() {
+        var myinvestdaytouzi = echarts.init(document.getElementById('investdaytouzi-chart1'));
+        option_touzi = {
+
+            tooltip: {
+                formatter: '{b}</br>{c}万元',
+
+            },
+
+            legend: {
+                data: ['交易额(万元)'],
+                textStyle: {
+                    color: "#b7babc"
+                },
+
+            },
+            xAxis: {
+                data: ["2月份", "3月份", "4月份", "5月份", "6月份", "7月份"],
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc'
+                    }
+                },
+                splitLine: {
+                    show: false
+                },
+            },
+            yAxis: {
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: '#b7babc',
+
+                    },
+                    formatter: '{value}万元'
+                },
+                splitLine: {
+                    show: true
+                },
+
+            },
+            series: [{
+                name: '交易额(万元)',
+                type: 'bar',
+                data: [137, 1093, 648, 465, 579, 279],
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top'
+                    }
+                },
+                barWidth: 45,
+                itemStyle: {
+                    normal: {
+                        color: '#03a4e7'
+                    }
+                }
+
+            }]
+        };
+        myinvestdaytouzi.setOption(option_touzi);
+    }
+    function myinvestC() {
+        var sychart_bara = echarts.init(document.getElementById('sy_p_chart_bar_a'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+
+                data: ['1-5万元', '6-10万元', '11-20万元', '21-50万元', '51万元以上'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101', '#8e7cc3'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+                    avoidLabelOverlap: true,
+
+                    data: [
+                        {
+                            value: 38,
+                            name: '1-5万元'
+                        },
+                        {
+                            value: 23,
+                            name: '6-10万元'
+                        },
+                        {
+                            value: 6,
+                            name: '11-20万元'
+                        },
+                        {
+                            value: 2,
+                            name: '21-50万元'
+                        },
+                        {
+                            value: 1,
+                            name: '51万元以上'
+                        }
+
+                    ]
+                }
+            ]
+        };
+        sychart_bara.setOption(option);
+    }
+    //期限
+    function myinvestD() {
+        var sychart_bar = echarts.init(document.getElementById('sy_p_chart_bar_b'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a}{b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+                data: ['0-30天', '31-60天', '61-90天', '91-180天', '181-365天'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101', '#8e7cc3'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+
+                    data: [
+                        {
+                            value: 4,
+                            name: '0-30天'
+                        },
+                        {
+                            value: 13,
+                            name: '31-60天'
+                        },
+                        {
+                            value: 23,
+                            name: '61-90天'
+                        },
+                        {
+                            value: 30,
+                            name: '91-180天'
+                        },
+                        {
+                            value: 0,
+                            name: '181-365天'
+                        }
+                    ]
+                }
+
+            ]
+        };
+        sychart_bar.setOption(option);
+    }
+
+    function myinvestC1() {
+        var sychart_bara = echarts.init(document.getElementById('sy_p_chart_bar_a1'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+
+                data: ['5-10万元', '10-20万元', '21-50万元', '51万元以上'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+                    avoidLabelOverlap: false,
+
+                    data: [
+
+                        {
+                            value: 2,
+                            name: '5-10万元'
+                        },
+                        {
+                            value: 2,
+                            name: '10-20万元'
+                        },
+                        {
+                            value: 2,
+                            name: '21-50万元'
+                        },
+                        {
+                            value: 5,
+                            name: '51万元以上'
+                        }
+
+                    ]
+                }
+            ]
+        };
+        sychart_bara.setOption(option);
+    }
+
+    function myinvestD1() {
+        var sychart_bar = echarts.init(document.getElementById('sy_p_chart_bar_b1'));
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} {b}: {c}笔 ({d}%)"
+            },
+            legend: {
+                x: 'center',
+                bottom: "10px",
+                data: ['3个月以下', '6个月', '9个月', '12个月'],
+                textStyle: {
+                    color: "#b7babc"
+                }
+            },
+            color: ['#f9b401', '#00dda0', '#00a2e6', '#3AD101'],
+            series: [
+                {
+                    name: '',
+                    type: 'pie',
+                    radius: ['80', '120'],
+
+                    data: [
+                        {
+                            value: 7,
+                            name: '3个月以下'
+                        },
+                        {
+                            value: 4,
+                            name: '6个月'
+                        },
+                        {
+                            value: 0,
+                            name: '9个月'
+                        },
+                        {
+                            value: 0,
+                            name: '12个月'
+                        },
+
+                    ]
+                }
+
+            ]
+        };
+        sychart_bar.setOption(option);
+    }
+    $(function () {
+        myinvestA();
+        myinvestA1();
+        myinvestC();
+        myinvestD();
+        myinvestC1();
+        myinvestD1();
+//        initBarInfo();
+//        initPieInfo();
+    });
+</script>
+</body>
+</html>
+
+
+<!--onclick="return checkAccess();"-->
+
